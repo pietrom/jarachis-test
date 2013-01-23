@@ -13,8 +13,16 @@ public class SimpleInitialContextFactory implements InitialContextFactory {
 		this.context = context;
 	}
 
+	public SimpleInitialContextFactory() {
+		this.context = new MockContext();
+	}
+
 	@Override
 	public Context getInitialContext(Hashtable<?, ?> environment) throws NamingException {
 		return context;
+	}
+
+	public void bind(String name, Object obj) throws NamingException {
+		context.bind(name, obj);
 	}
 }
