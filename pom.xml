@@ -65,7 +65,7 @@
 				</configuration>
 			</plugin>
 			<plugin>
-				 <groupId>org.apache.maven.plugins</groupId>
+				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-eclipse-plugin</artifactId>
 				<version>2.9</version>
 			</plugin>
@@ -103,7 +103,7 @@
 					</dependency>
 				</dependencies>
 				<configuration>
-				    <relativizeDecorationLinks>false</relativizeDecorationLinks>
+					<relativizeDecorationLinks>false</relativizeDecorationLinks>
 					<reportPlugins>
 						<plugin>
 							<groupId>org.apache.maven.plugins</groupId>
@@ -160,8 +160,8 @@
 							<artifactId>maven-checkstyle-plugin</artifactId>
 							<version>2.6</version>
 							<configuration>
-							    <configLocation>conf/jarachis-checkstyle.xml</configLocation>
-							    <enableRulesSummary>false</enableRulesSummary>
+								<configLocation>conf/jarachis-checkstyle.xml</configLocation>
+								<enableRulesSummary>false</enableRulesSummary>
 							</configuration>
 						</plugin>
 						<plugin>
@@ -172,7 +172,8 @@
 								<argLine>-Xmx256m</argLine>
 								<argLine>-XX:MaxPermSize=256m</argLine>
 							</configuration>
-							<!-- Usually findbugs needs a lot of memory, change these values if needed. -->
+							<!-- Usually findbugs needs a lot of memory, change these values if 
+								needed. -->
 						</plugin>
 					</reportPlugins>
 				</configuration>
